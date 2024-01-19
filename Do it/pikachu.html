@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="one">
+      <div class="two">
+      <div class="three" >
+      <div class="four"></div>
+      
+     </div>
+    </div>
+    </div>
+  </div>
+  <style>
+    .container{
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  .one {
+    height: 30px;
+    width: 250px;
+    background-color: chocolate;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: spin 5s  infinite normal;
+    transform: rotate(45deg);
+    
+  }
+  @keyframes spin{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+  }
+.two{
+
+  transform: rotate(90deg);
+  background-color: blue;
+  height: 30px;
+  width: 250px;
+  animation: spina 3s ease-in-out  infinite normal;
+
+}
+@keyframes spina{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+  }
+
+
+.three{
+  
+  transform: rotate(30deg);
+  background-color: rgb(0, 255, 149);
+  height: 30px;
+  width: 250px;
+}
+.four{
+  
+  transform: rotate(1350deg);
+  background-color: rgb(106, 255, 0);
+  height: 30px;
+  width: 250px;
+}
+  </style>
+</body>
+</html>
